@@ -1,0 +1,86 @@
+
+ul#index{
+	list-style-type: none;	
+	float: right;
+ 	clear: left;
+}
+ul#index li{
+	display: inline;
+	padding: 2px;
+	text-decoration: none;
+
+}
+ul#index li a{
+	background-color: orange;
+	color: white;
+	padding: 10px 30px;
+	text-decoration: none;
+	border-radius: 6px;
+	
+}
+ul#index li a:hover{
+	background-color: #0A0A2A /* #0489B1 */;
+}
+body{
+	background-image: url("backgr.jpg");
+ 	background-repeat: no-repeat;
+ 	background-size: 1380px 680px; 
+ 	
+ 	color: #0B3B39;
+ 	font-family:"Times New Roman", Arial;
+ 	
+}
+div#intro{
+	position: absolute;
+	top:30%;
+	left: 30%;
+	height: 200px;
+	width: 500px;
+  	padding: 5px;
+  	font-size: 20px;
+	text-align: justify;
+	border-width: 200px 600px;
+}
+div.at{ 
+		color: #0A0A2A;
+		font-size: 2em;
+	    position: absolute;
+		top: 70%;
+		left:30%;
+        padding: 3px;
+        
+       
+}
+div.sch{
+	position: absolute;
+	top:28%;
+	left: 10%;
+	height: 200px;
+	width: 500px;
+  	padding: 5px;
+  	font-family: "Times New Roman" , Arial;
+  	font-size: 20px;
+	text-align: justify;
+	border-width: 200px 600px;
+}
+div.col{
+	position: absolute;
+	top:28%;
+	left: 50%;
+	height: 200px;
+	width: 500px;
+  	padding: 5px;
+  	font-family: "Times New Roman" , Arial;
+  	font-size: 20px;
+	text-align: justify;
+	border-width: 200px 600px;
+}
+h1.anu{
+	color: #FFFFFF;
+	font-family: "Century Schoolbook L";
+	font-size: 35px;
+}
+h1.head{
+	color: #0489B1;
+	font-family: "Century Schoolbook L";
+}
