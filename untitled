@@ -1,0 +1,33 @@
+<?php
+define('DB_HOST', 'localhost');
+define('DB_NAME','practice');
+define('DB_USER', 'root');
+define('DB_PASSWORD','');
+
+$con=mysql_connect(DB_HOST,DB_USER,DB_PASSWORD) or die("Failed to connect to MySQL".mysql_error());
+$db=mysql_select_db(DB_NAME,$con) or die("Failed to connect".mysql_error());
+/*$ID=$_POST['user'];
+$Password=$_POST['pass'];
+*/					
+function SignIn()
+{
+	session_start();
+	if(!empty($_POST['user'])){
+		$query=mysql_query("SELECT * FROM Username where userName='$_POST[user]' AND pass='$_POST[pass]'") or die(mysql_error());
+		$row=mysql_fetch_array($query) or die(mysql_error());
+		if(!empty($row['userNamer']) AND !empty($row['pass'])){
+			$_SESSION['userName']= $row['pass'];
+			echo "Succesfully login to user profile page";
+
+		}
+		else{
+			echo "you entered wrong password";
+		}
+	}
+
+}	
+if(isset($_POST['submit']))
+{
+	SignIn();
+}														
+?>											
