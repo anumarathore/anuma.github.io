@@ -110,21 +110,5 @@
 			},
 			html:number
 		});
-		
-		// The .static class is added when the animation
-		// completes. This makes it run smoother.
-		/*
-		digit
-			.before(replacement)
-			.removeClass('static')
-			.animate({top:'2.5em',opacity:0},'fast',function(){
-				digit.remove();
-			})
-
-		replacement
-			.delay(100)
-			.animate({top:0,opacity:1},'fast',function(){
-				replacement.addClass('static'); 
-			}); */
 	}
 })(jQuery);
